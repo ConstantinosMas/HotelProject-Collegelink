@@ -33,13 +33,13 @@ if (!empty(User::getCurrentUserId())) {
         <div class="form-container">
             <form method="post" action="/../public/actions/Login.php">
                 <h2 class="text-center"><strong>Login</strong> to your account.</h2>
-                <div class="form-group"><input class="form-control" id="email" type="email" name="email" placeholder="Email"></div>
+                <div class="form-group"><input class="form-control" id="email" type="email" name="email" required placeholder="Email"></div>
 
                 <?php if ($_GET['emailNotFound']) { ?>
                     <h6 style="color:#f71100;">Email not found.</h6>
                 <?php } ?>
  
-                <div class="form-group"><input class="form-control" id="password" type="password" name="password" placeholder="Password"></div>
+                <div class="form-group"><input class="form-control" id="password" type="password" name="password" required placeholder="Password"></div>
 
                 <?php if ($_GET['wrongPass']) { ?>
                     <h6 style="color:#f71100;">Wrong password! Please try again.</h6>
