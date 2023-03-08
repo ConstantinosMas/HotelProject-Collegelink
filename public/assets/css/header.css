@@ -1,0 +1,51 @@
+.container-fluid {
+    max-width:60%;
+}
+
+@media (max-width:700px) {
+    .container-fluid {
+        max-width:100%;
+    }
+}
+
+.navbar-brand {
+    text-decoration: none;
+    color:inherit;
+    position: absolute;
+    top:10%
+}
+
+.navbar {
+    max-height:50px;
+}
+
+
+.navbar-brand:hover {
+    color:#ff7842;
+}
+
+.navbar li a:hover {
+    color:#ff7842;
+}
+
+
+#fade {
+    height: 4px;
+    margin-bottom: 80px;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, #333333), to(rgba(0, 0, 0, 0)));
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+    background: linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+    border: 0;
+  }
+  #fade:after {
+    display: block;
+    content: '';
+    height: 30px;
+    background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 116, color-stop(0%, #6e6e6e), color-stop(100%, rgba(255, 255, 255, 0)));
+    background-image: -webkit-radial-gradient(center top, farthest-side, #6e6e6e 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: -moz-radial-gradient(center top, farthest-side, #6e6e6e 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: -o-radial-gradient(center top, farthest-side, #6e6e6e 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: radial-gradient(farthest-side at center top, #6e6e6e 0%, rgba(255, 255, 255, 0) 100%);
+  }

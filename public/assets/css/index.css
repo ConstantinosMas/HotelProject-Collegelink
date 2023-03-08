@@ -1,0 +1,168 @@
+
+body { 
+  background: url('/public/assets/img/landing/1.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  transition: background 1s linear;
+}
+
+.navbar{
+  /* border-bottom: 3px solid rgba(255, 255, 255, 0.13);
+  /* border-right: 3px solid rgba(255, 255, 255, 0.13);
+  border-left: 3px solid rgba(255, 255, 255, 0.13); */
+  /* box-shadow:0px 1px 170px 10px rgba(255, 255, 255, 0.925); */
+  border-radius: 5px;
+  color:white;
+}
+
+.container #fade {
+  height: 5px;
+  margin-bottom: 80px;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, #333333), to(rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #ffffff, rgba(0, 0, 0, 0));
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #ffffff, rgba(0, 0, 0, 0));
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0), #ffffff, rgba(0, 0, 0, 0));
+  background: linear-gradient(left, rgba(0, 0, 0, 0), #ffffff, rgba(0, 0, 0, 0));
+  border: 0;
+}
+
+.container #fade:after {
+  display: block;
+  content: '';
+  height: 30px;
+  background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 116, color-stop(0%, #ffffff), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-radial-gradient(center top, farthest-side, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -moz-radial-gradient(center top, farthest-side, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-radial-gradient(center top, farthest-side, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: radial-gradient(farthest-side at center top, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+
+.navbar a{
+  color:white;
+}
+
+  .register-photo .form-container {
+    display:table;
+    max-width:500px;
+    width:90%;
+    margin:0 auto;
+    box-shadow:12px 12px 40px rgba(0, 0, 0, 0.397);
+  }
+  
+  .register-photo form {
+    display:table-cell;
+    width:400px;
+    background-color:#ffffff;
+    padding:40px 60px;
+    color:#505e6c;
+    border-radius: 5px;
+  }
+  
+  @media (max-width:991px) {
+    .register-photo form {
+      padding:40px;
+    }
+  }
+  
+  .register-photo form h2 {
+    font-size:24px;
+    line-height:1.5;
+    margin-bottom:30px;
+  }
+  
+  .register-photo form .form-control {
+    background:#f7f9fc;
+    border:none;
+    border-radius:5%;
+    box-shadow:none;
+    outline:none;
+    color:inherit;
+    text-indent:6px;
+    height:40px;
+    margin-top:10px;
+    text-align: center;
+  }
+  
+  .register-photo form .form-check {
+    font-size:13px;
+    line-height:20px;
+  }
+  
+  .register-photo form .btn-primary {
+    /* background:#f4476b; */
+    background:#ff6427; 
+    border:none;
+    border-radius:4px;
+    padding:11px;
+    box-shadow:none;
+    margin-top:35px;
+    text-shadow:none;
+    outline:none !important;
+    max-width: 100%;
+    min-width: 50%;
+  }
+  
+  .register-photo form .btn-primary:hover, .register-photo form .btn-primary:active {
+    background:#ee4300;
+  }
+  
+  .register-photo form .btn-primary:active {
+    transform:translateY(1px);
+  }
+  
+  .register-photo form .already {
+    display:block;
+    text-align:center;
+    font-size:12px;
+    color:#6f7a85;
+    opacity:0.9;
+    text-decoration:none;
+    
+  }
+  
+  .drop-menu {
+    display:inline-block;
+  }
+
+  
+  .drop-btn {
+    width:140px;
+    height:50px;
+    margin-bottom: 1rem;
+  }
+
+  .register-photo .drop-menu .btn-primary{
+    background:#cacaca;
+  }
+
+  .register-photo .drop-menu .btn-primary:hover{
+    background:#adadad;
+  }
+
+
+  .drop-btn-1 {
+    margin-right:10px;
+  }
+
+  .drop-btn-2 {
+    margin-left:10px;
+  }
+
+  ::placeholder {
+    text-align: center;
+  }
+
+  .drop-menu .dropdown-item:hover {
+    background:#ff6427
+  }
+
+
+  
+  
+
+
+

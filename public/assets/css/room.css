@@ -1,0 +1,279 @@
+.rating {
+    width: 210px;
+    font-size:30px;
+ }
+ 
+ .rating-star {
+    cursor: pointer;
+    color: rgb(255, 153, 0);
+ }
+
+ .review .fa-star {
+  color:rgb(255, 153, 0);
+}
+
+ .top-bar {
+  background:#ff6427; 
+  border-radius:3px; 
+  display:inline-block;
+  color:white;
+ }
+
+ .top-bar .top-details {
+  display:inline-block;
+ }
+
+ .top-bar .per-night {
+  float:right;
+  padding-top:5px;
+ }
+
+ .top-bar form {
+  display:inline-block;
+ }
+
+ .top-bar form button {
+  color:inherit; 
+  background:none; 
+  border:none;
+ }
+
+ .details-bar {
+  background:#ff6427;
+  border-radius:3px;
+  display:inline-block;
+  padding-top:10px;
+  color:white;
+ }
+
+ .details-bar h6 {
+  display:inline-block;
+ }
+
+ .details-bar i {
+  font-size:30px;
+ }
+
+ .booked {
+  display:flex;
+  justify-content:flex-end;
+ }
+
+ #booknow {
+  background:#ff6427; 
+  border:none;
+  border-radius:4px;
+  padding:13px 25px;
+  box-shadow:none;
+  margin-top:35px;
+  text-shadow:none;
+  outline:none !important;
+ }
+
+ #booknow:hover {
+  background:#ee4300;
+ }
+
+ .hr {
+  border:none;
+  border-top:2px dotted black;
+  margin:60px 0;
+ }
+ 
+ .map-box {
+  height:400px;
+  margin-bottom: 30px;
+ }
+
+ #leave-a-review {
+  margin-top:70px;
+ }
+
+ .review {
+  border-left:2px solid #ff6427;
+ }
+
+ .review h3 {
+  display: inline-block;
+ }
+
+ .review form {
+  display: inline-block;
+  margin-left: 15px;
+ }
+
+ .review form button {
+  background: none;
+	color: rgba(255, 0, 0, 0.212);
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+ }
+
+ .review form button:hover {
+  background: none;
+	color: rgb(230, 0, 0);
+ }
+ 
+ .review i {
+  font-size:20px;
+ }
+
+ .review p {
+  margin-top:-5px;
+  margin-bottom: 40px;
+ }
+
+ .description {
+  margin:20px 0 20px 0;
+  border-left:2px solid #ff6427;
+ }
+
+ .img-box {
+   margin: 20px 0;
+ }
+
+ .img-box img {
+   border-radius: 3px;
+ }
+
+ .hidden {
+  display: none;
+ }
+
+ .char-limit {
+  color:rgb(241, 0, 0);
+ }
+
+ .char-limit i {
+  color:rgb(255, 192, 56);
+ }
+
+ form .review-btn {
+  background:#ff6427;
+  border:none;
+  border-radius:4px;
+  padding:7px 15px;
+  box-shadow:none;
+  text-shadow:none;
+ }
+
+ form .review-btn:hover {
+  background:#ee4300;
+ }
+
+ .fa-heart:hover {
+  animation: pulse 1s;
+ }
+
+ @keyframes pulse {
+  0% {
+    transform: scale(1.2);
+  }
+  20% {
+    transform: scale(1.5);
+    box-shadow: 0 0 0 50px rgba(#000000, 0);
+  }
+  40% {
+    transform: scale(2);
+    box-shadow: 0 0 0 50px rgba(#000000, 0);
+  }
+  60% {
+    transform: scale(1.5);
+    box-shadow: 0 0 0 50px rgba(#000000, 0);
+  }
+  80% {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 50px rgba(#000000, 0);
+  }
+    100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(#000000, 0);
+  }
+}
+
+.reservation i {
+  margin-right: 10px;
+  font-size:20px;
+  
+}
+
+.res-dates {
+  background: #ff6427;
+  color:white;
+  border-radius: 3px;
+  padding: 10px 10px;
+  height:45px;
+  width:fit-content;
+  float:left;
+  margin-right: 20px;
+  transition: 0.5s;
+  cursor:default;
+}
+
+.res-dates:hover {
+  transform: scale(1.1);
+}
+
+.res-nights {
+  background: rgb(54, 49, 65);
+  color:white;
+  border-radius: 3px;
+  padding: 10px 10px;
+  height:45px;
+  width:fit-content;
+  float:left;
+  margin-right: 20px;
+  transition: 0.5s;
+  cursor:default;
+}
+
+.res-nights:hover {
+  transform: scale(1.1);
+}
+
+.res-price {
+  background: rgb(78, 78, 78);
+  color:white;
+  border-radius: 3px;
+  padding: 10px 10px; 
+  max-height:45px;
+  height:fit-content;
+  width:fit-content;
+  transition: 0.5s;
+  cursor:default;
+}
+
+.res-price:hover {
+  transform: scale(1.1);
+}
+
+.res-line {
+  height:2px;
+  background:linear-gradient(to right, #ff6427, transparent 90%);
+  border-radius: 80px;
+  margin-top:20px;
+}
+
+.no-results {
+  margin:10px 0 30px 0;
+  color:rgba(0, 0, 0, 0.308);
+}
+
+.dottedborder {
+  border-right:1px dotted white;
+}
+
+.marker {
+  background-image: url('/public/assets/img/map_marker.png');
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+

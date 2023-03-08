@@ -1,0 +1,162 @@
+.room-list a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.favorites {
+    margin-top:30px;
+}
+
+.fav-rev h2 {
+    color:#ff6427;
+    margin-bottom: 30px;
+}
+
+.fav-rev a {
+    text-decoration:none;
+    color:inherit;
+}
+
+.fav-rev a:hover {
+    color:#ff6427;
+}
+
+.review-li {
+    margin-bottom: 30px;
+}
+
+.room-list img {
+    width:200px;
+    border-radius: 5px;
+}
+
+.details {
+    display: inline-block;
+    vertical-align: top;
+    padding-left:30px;
+    width: 100%;
+}
+
+.details h6{
+    color:rgb(160, 160, 160);
+    margin-bottom:20px;
+}
+
+.details i{
+    color:#ff6427;
+    margin-right: 10px;
+}
+
+.room-btn {
+    display: flex;
+    justify-content: end;
+}
+
+.room-list{
+    list-style:none;
+}
+
+.room-list .about-booking {
+    margin-top: 20px;
+    height:28px;
+    border-radius: 5px;
+    position: absolute;
+    max-width: 700px;
+
+}
+
+.room-list .price {
+    float: left;
+    background-color: rgb(78, 78, 78);
+    height:40px;
+    border-radius: 3px;
+    padding: 8px 5px 10px 5px;
+    color:white;
+    margin-left:-10px
+}
+
+.room-list .dates {
+    float: right;
+    background-color: rgb(204, 204, 204);
+    height:40px;
+    border-radius: 3px;
+    padding: 8px 5px 10px 5px;
+    color:black;
+}
+
+.price h5, .dates h5 {
+    font-size: 19px;
+}
+
+.room-list hr {
+    margin-top: 100px;
+    border: none;
+    border-top: 2px dotted;
+    height: 5px;
+}
+
+
+.room-list .about-booking .container {
+    display: inline-block;
+}
+
+
+.parent-div .my-bookings {
+    background:#ff6427;
+    max-width: 700px;
+    border-radius: 5px;
+    height: 45px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.parent-div .my-bookings h2 {
+    color:white;
+}
+
+.room-list .details .gotoroom {
+    border-radius: 5px;
+    max-width: 503px;
+    background-color: #ff6427;
+    border:none;
+}
+
+.room-list .details .gotoroom:hover {
+    background:#ee4300;
+  
+}
+
+.fa-star {
+    color:rgb(255, 153, 0);
+  }
+
+.img-box {
+    padding-right:20px;
+    float:left;
+    border-right:2px solid #ff6427;
+}
+
+.no-results i {
+    font-size:150px;
+    margin-bottom: 30px;
+    color:rgba(0, 0, 0, 0.151);
+}
+
+.no-results h3 {
+    color:rgba(0, 0, 0, 0.308);
+}
+
+.loadReviews .showmore {
+    background: none;
+	color: #ff6427;
+	border: none;
+	padding: 5px;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.loadReviews .showmore:hover {
+    background: #ff642760;
+    border-radius: 5px;
+}

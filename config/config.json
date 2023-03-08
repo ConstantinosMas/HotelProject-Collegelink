@@ -1,0 +1,10 @@
+{
+    "database": {
+        "host": "127.0.0.1",
+        "dbname" : "hotel",
+        "username": "hotel",
+        "password": "password"
+
+    }
+
+}
