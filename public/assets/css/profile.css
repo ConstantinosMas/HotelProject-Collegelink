@@ -160,3 +160,35 @@
     background: #ff642760;
     border-radius: 5px;
 }
+
+.details .cancel-booking {
+    font-size:13px;
+    color: black;
+    margin-right:140px;
+    border: none;
+    /* background: white; */
+    /* border-radius: 5px; */
+    background: linear-gradient(to right, rgb(233, 233, 233) 30%,rgba(0, 0, 0, 0) 150%);
+}
+
+.details .cancel-booking:hover {
+    background: linear-gradient(to right, rgb(197, 197, 197) 30%,rgba(0, 0, 0, 0) 150%);
+    color: black;
+}
+
+#cancelModal {
+    position:fixed;
+    top:30%;
+}
+
+#cancelModal .closeButton {
+    background: rgb(194, 194, 194);
+    border:none;
+    outline:none;
+}
+
+#cancelModal .closeButton:hover {
+    background: rgb(170, 170, 170);
+    border:none;
+    outline:none;
+}

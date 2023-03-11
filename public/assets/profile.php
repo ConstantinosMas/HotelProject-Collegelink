@@ -124,6 +124,30 @@ $today = new DateTime();
                         <img src="/public/assets/img/rooms/<?php echo $booking['photo_url'] ?>" height="160" alt="room" />
                     </a>
                     </div>
+                    
+                    <!-- This is the modal for confirming booking deletion -->
+                    <div class="modal fade" id="cancelModal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Confirm cancel <i class="fa-solid fa-ban"></i></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Are you sure you want to cancel this reservation?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <form method="post" action="/../public/actions/DeleteBooking.php">
+                                    <input type="hidden" name="userId" value="<?php echo $userId ?>">
+                                    <input type="hidden" name="bookingId" value="<?php echo $booking['booking_id'] ?>">
+                                    <input type="hidden" name="csrf" value="<?php echo User::getCsrf() ?>">
+                                    <button type="button" class="btn btn-secondary closeButton" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" role="" class="btn btn-danger">Confirm</button>
+                                </form>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
 
     
                     <div class="container-fluid details">                        
@@ -131,7 +155,13 @@ $today = new DateTime();
                         <h6><i class="fa-solid fa-location-dot"></i><?php echo sprintf('%s, %s', strtoupper($booking['city']), strtoupper($booking['area'])) ?></h6>
                         <p><?php echo $booking['description_short'] ?></p>
                         
-                        <div class="container room-btn">               
+                        <div class="container room-btn">
+                        <?php 
+                            $checkoutDT = new DateTime($booking['check_out_date']);
+                            if ($today < $checkoutDT) { ?>
+                                <button data-bs-toggle="modal" data-bs-target="#cancelModal" class="btn btn-primary cancel-booking">Cancel Booking</button> 
+                        <?php } ?>
+                                          
                                 <a href= "/public/assets/room.php?roomId=<?php echo $booking['room_id'] ?>"> <button type="submit" class="btn btn-primary gotoroom">Go to room page</button></a>
                         </div>             
                     </div>

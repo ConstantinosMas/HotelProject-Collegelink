@@ -51,7 +51,23 @@ class Booking extends BaseService {
         LEFT JOIN room ON booking.room_id = room.room_id
         LEFT JOIN room_type on room.type_id = room_type.type_id
         WHERE user_id = :userId', $parameters);
+    }
 
+    public function DeleteBooking($userId, $bookingId) {
+        $parameters = [
+            ':bookingId' => $bookingId,
+        ];
+
+        $currentBooking = $this->fetch('SELECT user_id FROM booking WHERE booking_id = :bookingId', $parameters);
+        if ($userId != $currentBooking['user_id']) {
+            return;
+        }
+
+        $parameters = [
+            ':bookingId' => $bookingId,
+        ];
+
+        $this->execute('DELETE FROM booking WHERE booking.booking_id = :bookingId', $parameters);
     }
 
     

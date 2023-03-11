@@ -240,7 +240,6 @@ $roomLong = $currentRoom['location_long'];
 
         <?php } ?>
 
-        
 
         <h4 style="margin-bottom:30px"> Reviews </h4>
 
