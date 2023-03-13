@@ -46,7 +46,7 @@ $cities= $rooms->getCities();
             </a>
             <div class="details">
                 <a href="#" class="compare inactive"><?php echo sprintf('%s, %s', $room['city'], $room['area'] ) ?></a>
-                <h2 class="inactive"><a  href="#"><?php echo $room['name'] ?></a></h2>
+                <h2 id="room-name" class="inactive"><a  href="#"><?php echo $room['name'] ?></a></h2>
                 <div class="rating">
                     <div>
                         <?php for ($i = 0; $i < $avgRoomRating; $i++) { ?> <i class="fa-solid fa-star fa-lg"></i> <?php } ?>
@@ -60,7 +60,7 @@ $cities= $rooms->getCities();
                     <input type="hidden" name="checkin" value="<?php echo $_GET['checkin'] ?>">
                     <input type="hidden" name="checkout" value="<?php echo $_GET['checkout'] ?>">
                     
-                    <button type="submit" class="btn btn-primary book-button">Book now!</button>
+                    <button type="submit" id="book-btn" class="btn btn-primary book-button">Book now!</button>
                 </form>
                 <p class="price"><?php echo $room['price'].'€' ?><em> per night</em></p>
                 

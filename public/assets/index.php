@@ -73,7 +73,7 @@ $cities= $rooms->getCities();
     </div>
 
     <div class="container text-center">
-        <h1 style="text-shadow:5px 10px 10px rgba(0, 0, 0, 0.697);color:white;font-size:80px;margin-top:80px;"><span style="color:#ff6427">N</span>ex<span style="color:#ff6427">T</span>rip</h1>
+        <h1 id="page-title" style="text-shadow:5px 10px 10px rgba(0, 0, 0, 0.697);color:white;font-size:80px;margin-top:80px;"><span style="color:#ff6427">N</span>ex<span style="color:#ff6427">T</span>rip</h1>
         <h6 style="color:white;margin-top:15px"><em>If you can dream it, you can find it.</em></h6>
     </div>
 

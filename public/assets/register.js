@@ -132,3 +132,30 @@ let slider = new Slider(
       { path : '/public/assets/img/places/places6.jpg', content : '' },
     ],
 });
+
+$('#password').on('input', function() {
+  let pass_length = $('#password').val().length;
+  let hasNumber = /\d/;
+  let hasLetter = /[a-zA-Z]/g;
+  let pass_has_number = hasNumber.test($('#password').val());
+  let pass_has_letters = hasLetter.test($('#password').val());
+  if (pass_length >= 8 && pass_has_number == true && pass_has_letters == true) {
+    $('.pass-warning').addClass('hidden');
+    $('.pass-confirm').removeAttr('disabled');     
+  } else {
+    $('.pass-warning').removeClass('hidden');
+    $('.pass-confirm').attr('disabled', true);  
+    
+  }
+});
+
+$('#password-confirm').on('input', function() {
+  let pass = $('#password').val();
+  if (pass != $('#password-confirm').val()) {
+    $('.passwords-warning').removeClass('hidden');
+    $('.btn-primary').addClass('disabled');
+  } else {
+    $('.passwords-warning').addClass('hidden');
+    $('.btn-primary').removeClass('disabled');
+  }
+});
