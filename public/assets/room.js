@@ -10,7 +10,7 @@ $(document).ready(function () {
         star.onclick = () => {
         i = stars.indexOf(star);
         let star_count = parseInt(i);
-        $('.stars-count').val($('.bi-star-fill').length); 
+        $('.stars-count').val(star_count + 1); 
 
         if (star.className===starClassInactive) {
             for (i; i >= 0; --i) stars[i].className = starClassActive;
