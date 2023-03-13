@@ -15,6 +15,7 @@ use app\hotel\User;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NexTrip</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font_general.css">
     <link rel="stylesheet" href="css/header.css">
 </head>
 
@@ -24,10 +25,10 @@ use app\hotel\User;
         <div class="container-fluid test">
         <a class="navbar-brand" href="/public/assets/index.php">
                 <img src="/public/assets/img/logo.png" style="border-radius:100%;height:40px;width:70px" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                NexTrip
+                <span style="color:#ff6427">N</span>ex<span style="color:#ff6427">T</span>rip
                 </a> 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <button style="color:white;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""><i class="fa-solid fa-bars"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">

@@ -56,32 +56,25 @@
     list-style:none;
 }
 
-.room-list .about-booking {
-    margin-top: 20px;
-    height:28px;
-    border-radius: 5px;
-    position: absolute;
-    max-width: 700px;
-
+.about-booking div {
+    border-radius: 3px;
+    margin-top:20px;
 }
 
-.room-list .price {
-    float: left;
+.about-booking div h5{
+    padding-top:9px;
+}
+
+.about-booking .price{
     background-color: rgb(78, 78, 78);
-    height:40px;
-    border-radius: 3px;
-    padding: 8px 5px 10px 5px;
     color:white;
-    margin-left:-10px
+    text-align: center;
 }
 
-.room-list .dates {
-    float: right;
+.about-booking .dates{
     background-color: rgb(204, 204, 204);
-    height:40px;
-    border-radius: 3px;
-    padding: 8px 5px 10px 5px;
     color:black;
+    text-align: center;
 }
 
 .price h5, .dates h5 {
@@ -89,15 +82,10 @@
 }
 
 .room-list hr {
-    margin-top: 100px;
+    margin-top: 70px;
     border: none;
     border-top: 2px dotted;
     height: 5px;
-}
-
-
-.room-list .about-booking .container {
-    display: inline-block;
 }
 
 
@@ -112,6 +100,7 @@
 
 .parent-div .my-bookings h2 {
     color:white;
+    padding-top:3px;
 }
 
 .room-list .details .gotoroom {
@@ -164,10 +153,7 @@
 .details .cancel-booking {
     font-size:13px;
     color: black;
-    margin-right:140px;
     border: none;
-    /* background: white; */
-    /* border-radius: 5px; */
     background: linear-gradient(to right, rgb(233, 233, 233) 30%,rgba(0, 0, 0, 0) 150%);
 }
 
@@ -175,6 +161,17 @@
     background: linear-gradient(to right, rgb(197, 197, 197) 30%,rgba(0, 0, 0, 0) 150%);
     color: black;
 }
+
+.guests {
+    margin-top: 20px;
+    border-radius: 3px;
+    max-width: 100%;
+}
+
+.guests h5{
+    font-size: 15px;
+}
+
 
 #cancelModal {
     position:fixed;

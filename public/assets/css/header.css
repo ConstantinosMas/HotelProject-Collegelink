@@ -11,8 +11,7 @@
 .navbar-brand {
     text-decoration: none;
     color:inherit;
-    position: absolute;
-    top:10%
+    font-size: 25px;
 }
 
 .navbar {
