@@ -5,44 +5,34 @@ require __DIR__ . '/../../boot/boot.php';
 use app\hotel\Room;
 
 
-
 $rooms = new Room();
 $results = $rooms->getRooms($_REQUEST['city'], $_REQUEST['room_type'], $_REQUEST['checkin'], $_REQUEST['checkout'], $_REQUEST['minPrice'], $_REQUEST['maxPrice']);
 $cities= $rooms->getCities();
 
-
-
-
 ?>
-
-
-
 
 <div id="my-bookings" class="container">
                     <h2> Search Results </h2>
                 </div>
 <ul class="room-list">
 
-    <?php
-    if (empty($results)) { ?>
+        <?php
+        if (empty($results)) { ?>
         <div class="no-results-div container text-center">
             <img src="/public/assets/img/noresults.png" />
             <h2>Sorry, no results found!</h2>
         </div>
 
-    <?php }
-     
-     
-    
-    foreach ($results as $room) {
+        <?php }
+
+        foreach ($results as $room) {
         $avgRoomRating = round($room['avg_reviews']);
         $remainingStars = 5 - $avgRoomRating;
-         ?>
-
+        ?>
 
         <li>
             <a href="#" class="photo inactive">
-                <img src="/public/assets/img/rooms/<?php echo $room['photo_url']?>" height="160" alt="room" />
+            <img src="/public/assets/img/rooms/<?php echo $room['photo_url']?>" height="160" alt="room" />
             </a>
             <div class="details">
                 <a href="#" class="compare inactive"><?php echo sprintf('%s, %s', $room['city'], $room['area'] ) ?></a>
@@ -59,11 +49,10 @@ $cities= $rooms->getCities();
                     <input type="hidden" name="roomId" value="<?php echo $room['room_id'] ?>">
                     <input type="hidden" name="checkin" value="<?php echo $_GET['checkin'] ?>">
                     <input type="hidden" name="checkout" value="<?php echo $_GET['checkout'] ?>">
-                    
+
                     <button type="submit" id="book-btn" class="btn btn-primary book-button">Book now!</button>
                 </form>
                 <p class="price"><?php echo $room['price'].'€' ?><em> per night</em></p>
-                
             </div>
         </li>
 

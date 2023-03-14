@@ -24,11 +24,10 @@ $userReviews = $review->loadMoreReviews($userId, $resultNumber);
 
 ?>
 
-
 <?php foreach ($userReviews as $index => $review) { ?>
-                        <li class="review-li">
-                            <h5><a class="test" href="/public/assets/room.php?roomId=<?php echo $review['room_id'] ?>"><?php echo sprintf('%s. %s', $index + $resultNumber + 1, $review['name']) ?> </a></h5> 
-                            <h5 style="display:inline-block;"><?php for ($i = 0; $i < $review['rate']; $i++) { ?> <i class="fa-solid fa-star fa-lg"></i> <?php } ?> </h5>
-                            <h5 style="display:inline-block;"><?php for ($i = 0; $i < 5 - $review['rate']; $i++) { ?> <i class="fa-regular fa-star fa-lg"></i> <?php } ?> </h5>
-                        </li>
-                    <?php } ?>
+<li class="review-li">
+    <h5><a class="test" href="/public/assets/room.php?roomId=<?php echo $review['room_id'] ?>"><?php echo sprintf('%s. %s', $index + $resultNumber + 1, $review['name']) ?> </a></h5> 
+    <h5 style="display:inline-block;"><?php for ($i = 0; $i < $review['rate']; $i++) { ?> <i class="fa-solid fa-star fa-lg"></i> <?php } ?> </h5>
+<h5 style="display:inline-block;"><?php for ($i = 0; $i < 5 - $review['rate']; $i++) { ?> <i class="fa-regular fa-star fa-lg"></i> <?php } ?> </h5>
+</li>
+<?php } ?>

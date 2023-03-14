@@ -63,45 +63,41 @@ $roomIsFav = $favorite->checkFavorite($userId, $_REQUEST['roomId']);
 
 ?>
 
-
-
 <span id="reviews">
-<?php 
-            if (empty($roomReviews)) { ?>
-            <div class="text-center no-results">
-                <h4> No reviews yet.</h4>
-            </div>
-        <?php }
+    <?php 
+    if (empty($roomReviews)) { ?>
+    <div class="text-center no-results">
+        <h4> No reviews yet.</h4>
+    </div>
+    <?php }
 
+    foreach ($roomReviews as $review) { ?>
+    <div class="container review">
+        <h3><?php echo $review['name'] ?> </h3>
 
-        
-            foreach ($roomReviews as $review) { ?>
-                <div class="container review">
-                <h3><?php echo $review['name'] ?> </h3>
-                
-                <h3><?php for ($i = 0; $i < $review['rate']; $i++) { ?> <i class="fa-solid fa-star"></i> <?php } ?> </h3>
-                <h3><?php for ($i = 0; $i < 5 - $review['rate']; $i++) { ?> <i class="fa-regular fa-star"></i> <?php } ?> </h3>
-                <?php if ($userId == $review['user_id']) { ?>
-                <form class="deleteReview" method="post" action="/../public/actions/DeleteReview.php">
-                    <input type="hidden" name="reviewId" value="<?php echo $review['review_id']?>">
-                    <input type="hidden" name="roomId" value="<?php echo $_REQUEST['roomId'] ?>">
-                    <input type="hidden" name="userId" value="<?php echo $userId ?>">
-                    <input type="hidden" name="reviewUserId" value="<?php echo $review['user_id'] ?>">
-                    <input type="hidden" name="checkin" value="<?php echo $_REQUEST['checkin'] ?>">
-                    <input type="hidden" name="checkout" value="<?php echo $_REQUEST['checkout'] ?>">
-                    <input type="hidden" name="csrf" value="<?php echo User::getCsrf(); ?>">
-                    <button class="trash-review" type="submit"><h6><i class="fa-solid fa-trash"></i></h6></button>
-                </form>
+        <h3><?php for ($i = 0; $i < $review['rate']; $i++) { ?> <i class="fa-solid fa-star"></i> <?php } ?> </h3>
+        <h3><?php for ($i = 0; $i < 5 - $review['rate']; $i++) { ?> <i class="fa-regular fa-star"></i> <?php } ?> </h3>
+        <?php if ($userId == $review['user_id']) { ?>
+        <form class="deleteReview" method="post" action="/../public/actions/DeleteReview.php">
+            <input type="hidden" name="reviewId" value="<?php echo $review['review_id']?>">
+            <input type="hidden" name="roomId" value="<?php echo $_REQUEST['roomId'] ?>">
+            <input type="hidden" name="userId" value="<?php echo $userId ?>">
+            <input type="hidden" name="reviewUserId" value="<?php echo $review['user_id'] ?>">
+            <input type="hidden" name="checkin" value="<?php echo $_REQUEST['checkin'] ?>">
+            <input type="hidden" name="checkout" value="<?php echo $_REQUEST['checkout'] ?>">
+            <input type="hidden" name="csrf" value="<?php echo User::getCsrf(); ?>">
+            <button class="trash-review" type="submit"><h6><i class="fa-solid fa-trash"></i></h6></button>
+        </form>
 
-                <?php } ?>
-                <p><em>At: </em><?php echo explode(' ', $review['created_time'])[0] ?>
-            
-                <p><?php echo $review['comment'] ?></p>
-                </div>
-                <hr class="hr" />
         <?php } ?>
+        <p><em>At: </em><?php echo explode(' ', $review['created_time'])[0] ?>
 
-                </span>
+        <p><?php echo $review['comment'] ?></p>
+    </div>
+    <hr class="hr" />
+    <?php } ?>
+
+</span>
 
 
 <span id="rating">
@@ -122,6 +118,5 @@ $roomIsFav = $favorite->checkFavorite($userId, $_REQUEST['roomId']);
                 <i class="fa-heart fa-xl fa-solid" style="<?php echo $roomIsFav ? 'color:#f00000;' : 'color:white;' ?>"></i>        
             </button>
         </form>
-
     <?php } ?>
 </span>

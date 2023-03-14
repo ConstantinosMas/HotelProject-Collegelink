@@ -1,3 +1,0 @@
-Error reporting
-setup autoloader
-boot app: setup environment, setup configuration, check for current user

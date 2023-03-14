@@ -1,5 +1,4 @@
 <?php
-// error_reporting(0);
 require __DIR__ . '/../../boot/boot.php';
 
 use app\hotel\User;
@@ -10,10 +9,8 @@ if (!empty(User::getCurrentUserId())) {
     die;
 }
 
+
 ?>
-
-
-
 
 
 <!DOCTYPE html>
@@ -22,7 +19,7 @@ if (!empty(User::getCurrentUserId())) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Untitled</title>
+    <title>Register - NexTrip</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font_general.css">
     <link rel="stylesheet" href="css/register_form.css">
@@ -49,16 +46,14 @@ if (!empty(User::getCurrentUserId())) {
                         <p class="pass-warning hidden" style="color:rgb(255, 192, 56);font-size:13px"><i class="fa-solid fa-circle-exclamation"></i> Password must have at least 8 characters, and contain one or more numbers</p>
                         <div class="form-group"><input class="form-control pass-confirm" disabled id="password-confirm" type="password" name="password" required placeholder="Re-type Password"></div>
                         <p class="passwords-warning hidden" style="color:red;"><i class="fa-solid fa-circle-exclamation"></i> Passwords must match</p>
-                        <div class="form-group">
-                            <!-- <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox">I agree to the license terms.</label></div> -->
-                        </div>
-                        <div class="form-group"><button class="btn btn-primary btn-block disabled" type="submit">Sign Up</button></div><a href="/public/assets/login.php" class="already">You already have an account? Login here.</a></form>
+                        
+                        <div class="form-group"><button class="btn btn-primary btn-block disabled" type="submit">Sign Up</button></div><a href="/public/assets/login.php" class="already">You already have an account? Login here.</a>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/f15bf32ba9.js" crossorigin="anonymous"></script>
     <script src="register.js"></script>
