@@ -3,7 +3,6 @@
 namespace app\hotel;
 
 use PDO;
-// use app\support\configuration\Configuration;
 use app\hotel\BaseService;
 
 class User extends BaseService

@@ -2,9 +2,7 @@
 require __DIR__ . '/../../boot/boot.php';
 
 
-use app\hotel\Booking;
 use app\hotel\User;
-use app\hotel\Favorite;
 use app\hotel\Review;
 
 if (empty(User::getCurrentUserId())) {

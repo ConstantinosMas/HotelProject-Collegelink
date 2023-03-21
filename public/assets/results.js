@@ -4,7 +4,7 @@ let maxValue = document.getElementById("max-value");
 function validateRange(minPrice, maxPrice) {
   if (minPrice > maxPrice) {
 
-    // Swap to Values
+    // Swap Values
     let tempValue = maxPrice;
     maxPrice = minPrice;
     minPrice = tempValue;

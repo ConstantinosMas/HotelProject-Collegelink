@@ -21,9 +21,7 @@ $csrf = $_REQUEST['csrf'];
     }
 
 // These if statements check which function the ajax call should do: addreview, deletereview or toggle favorite
-if (!empty($_REQUEST['isAddReview'])) {
-
-    
+if (!empty($_REQUEST['isAddReview'])) { 
 
     if ($_REQUEST['userId']) {
         $review->PostReview($_REQUEST['roomId'], $_REQUEST['userId'], $_REQUEST['reviewStars'], $_REQUEST['reviewText']);

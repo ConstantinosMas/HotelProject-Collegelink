@@ -67,7 +67,7 @@ $(document).ready(function () {
         const el = document.createElement('div');
         el.className = 'marker';
       
-        // make a marker for each feature and add to the map
+        // make a marker for each feature and add to the map!!!! Did not get this to work. Needs to be addressed.
         new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
     }
 

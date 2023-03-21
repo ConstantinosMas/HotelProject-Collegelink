@@ -49,15 +49,6 @@ $(document).ready(function () {
     $('.out').on('change', function() {
         let selected_checkout = $(this).val();
         document.getElementsByName("checkin")[0].setAttribute('max', selected_checkout);
-    });
-
-    
-   
-
-      
-   
-    
-    
+    });   
     
 });
-

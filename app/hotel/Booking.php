@@ -69,6 +69,5 @@ class Booking extends BaseService {
 
         $this->execute('DELETE FROM booking WHERE booking.booking_id = :bookingId', $parameters);
     }
-
     
 }

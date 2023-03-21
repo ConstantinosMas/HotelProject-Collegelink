@@ -22,7 +22,7 @@ use app\hotel\User;
 <body>
 
     <nav class="navbar navbar-expand-lg bg-white">
-        <div class="container-fluid test">
+        <div class="container-fluid">
             <a class="navbar-brand" href="/public/assets/index.php">
             <img src="/public/assets/img/logo.png" style="border-radius:100%;height:40px;width:70px" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
             <span style="color:#ff6427">N</span>ex<span style="color:#ff6427">T</span>rip
