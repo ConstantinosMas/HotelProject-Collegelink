@@ -5,3 +5,6 @@ It's a page based on PHP and MySql. It allows a user to search for hotels, using
 and make a reservation. It also allows a user to Register or Login, and leave reviews as well as Favorite rooms.
 
 The database has been exported in .sql format and is included in the main folder. Contains test users and reviews.
+
+
+The link to the GitHub resository of this project: https://github.com/ConstantinosMas/HotelProject-Collegelink
