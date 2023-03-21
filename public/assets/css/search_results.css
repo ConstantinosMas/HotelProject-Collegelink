@@ -24,16 +24,10 @@
     padding: 25px;
 }
 
-
-
-/* Product image */
-
 .room-list .photo{
     float:left;
     display: block;
-
     text-align: center;
-
     width: 15px;
     height: 200px;
     margin-right: 25px;

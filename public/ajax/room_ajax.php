@@ -92,7 +92,7 @@ $roomIsFav = $favorite->checkFavorite($userId, $_REQUEST['roomId']);
         <?php } ?>
         <p><em>At: </em><?php echo explode(' ', $review['created_time'])[0] ?>
 
-        <p><?php echo $review['comment'] ?></p>
+        <p><?php echo htmlentities($review['comment']) ?></p>
     </div>
     <hr class="hr" />
     <?php } ?>
